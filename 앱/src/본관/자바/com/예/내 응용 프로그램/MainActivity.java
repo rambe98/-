@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 };
-                timer.schedule(timertesk, 0,1000); //타이머 실행
+                타이머 . 일정 ( timertesk , 0 , 59000 ); // 타이머실행
             }
         }
     }
