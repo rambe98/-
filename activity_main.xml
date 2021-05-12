@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttoo_OnOff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6C0FF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_OnOff"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="215dp"
+        android:layout_height="217dp"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="#B6B4FF"
+        android:backgroundTintMode="src_in"
+        android:text="@string/onoff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/hour"
+        android:hint="00"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:background="@null"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+    <TextView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text=":"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <EditText
+        android:id="@+id/min"
+        android:hint="00"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="2"
+        android:background="@null"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        tools:ignore="MissingConstraints">
+    </EditText>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
